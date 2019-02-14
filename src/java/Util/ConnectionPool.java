@@ -5,23 +5,25 @@
  */
 package Util;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
-import javax.sql.DataSource;
-
 /**
  *
  * @author Trí Nguyễn
  */
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+
 public class ConnectionPool {
 
     public static Connection getConnection() {
         try {
             InitialContext ctx = new InitialContext();
             DataSource ds
-                    = (DataSource) ctx.lookup("java:comp/env/jdbc/ck_ltm");
+                    = (DataSource) ctx.lookup("java:comp/env/jdbc/cdcnpm");
             return ds.getConnection();
         } catch (NamingException ex) {
             return null;

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context path="">
-    <Resource name="jdbc/ck_ltm" auth="Container"
+    <Resource name="jdbc/CDCNPM" auth="Container"
         driverClassName="com.mysql.jdbc.Driver"
-        url="jdbc:mysql://localhost:3306/ck_ltm?characterEncoding=UTF-8"
+        url="jdbc:mysql://localhost:3306/CDCNPM?characterEncoding=UTF-8"
         username="root"
         password="1106"
         maxActive="100" maxIde="30" maxWait="10000"
