@@ -4,9 +4,25 @@
         <servlet-name>CityLoad_Servlet</servlet-name>
         <servlet-class>Controller.CityLoad_Servlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Place_Servlet</servlet-name>
+        <servlet-class>Controller.Place_Servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Hotel_Servlet</servlet-name>
+        <servlet-class>Controller.Hotel_Servlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CityLoad_Servlet</servlet-name>
         <url-pattern>/CityLoad</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Place_Servlet</servlet-name>
+        <url-pattern>/Place</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Hotel_Servlet</servlet-name>
+        <url-pattern>/Hotel</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

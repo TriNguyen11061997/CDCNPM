@@ -11,4 +11,44 @@ package Bean;
  */
 public class PlaceBean {
     private int PlaceID;
+    private String PlaceName;
+    private String PlaceDesc;
+    private int FK_CityID;
+
+    public PlaceBean() {
+    }
+
+    public int getPlaceID() {
+        return PlaceID;
+    }
+
+    public void setPlaceID(int PlaceID) {
+        this.PlaceID = PlaceID;
+    }
+
+    public String getPlaceName() {
+        return PlaceName;
+    }
+
+    public void setPlaceName(String PlaceName) {
+        this.PlaceName = PlaceName;
+    }
+
+    public String getPlaceDesc() {
+        return PlaceDesc;
+    }
+
+    public void setPlaceDesc(String PlaceDesc) {
+        this.PlaceDesc = PlaceDesc;
+    }
+
+    public int getFK_CityID() {
+        return FK_CityID;
+    }
+
+    public void setFK_CityID(int FK_CityID) {
+        this.FK_CityID = FK_CityID;
+    }
+    
+    
 }

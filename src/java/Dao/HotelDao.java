@@ -5,7 +5,7 @@
  */
 package Dao;
 
-import Bean.PlaceBean;
+import Bean.HotelBean;
 import Util.ConnectionPool;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -18,26 +18,21 @@ import java.util.List;
  *
  * @author Trí Nguyễn
  */
-public class PlaceDao {
+public class HotelDao {
 
     Connection conn;
     PreparedStatement ps;
     ResultSet rs;
 
-    public List<PlaceBean> GetListObjectByCityID(int ID) throws SQLException {
-        List<PlaceBean> list = new ArrayList<>();
+    public List<HotelBean> GetAllObjectByPlaceID(int ID) throws SQLException {
+        List<HotelBean> list = new ArrayList<>();
         conn = ConnectionPool.getConnection();
-        ps = conn.prepareCall("CALL Place_GetAllObjectByCityID(?)");
-        ps.setInt(1, ID);
+        ps = conn.prepareCall("CALL Hotel_GetAllObjectByPlaceID(?)");
         rs = ps.executeQuery();
-        PlaceBean place;
+        HotelBean hotel;
         while (rs.next()) {            
-            place = new PlaceBean();
-            place.setPlaceID(rs.getInt("PlaceID"));
-            place.setPlaceName(rs.getString("PlaceName"));
-            place.setPlaceDesc(rs.getString("PlaceDesc"));
-            list.add(place);
+            hotel = new HotelBean();
         }
-        return list;
+        return null;
     }
 }

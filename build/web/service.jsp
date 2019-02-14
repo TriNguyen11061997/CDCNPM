@@ -38,7 +38,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <body>
         <!-- start header-->
         <% List<CityBean> list = (List<CityBean>) request.getAttribute("listCity");%>
-      
+
         <div class="header_bg">
             <div class="wrap">
                 <div class="header">
@@ -78,7 +78,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <li class="color3"><a href="about.jsp"> <i class="icon3"> </i><span>about</span></a></li>
                             <li class="color4"><a href="service.jsp"> <i class="icon4"> </i><span>the hour</span></a></li>
                             <li class="color5"><a href="travel_guide.jsp"> <i class="icon5"> </i> <span>Place</span></a></li>
-                            <li class="color6"><a href="contact.jsp"> <i class="icon6"></i> <span>Contact</span></a></li>
+                            
                         </ul>
                         <div class="clear"></div>
                     </div>
@@ -124,7 +124,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             %>   
                             <div class="ser-grid-list img_style">
                                 <div class="gallery">
-                                    <a class="popup-with-zoom-anim" href="#small-dialog"><img src="Assets/images/ser_pic1.jpg" title="image-name"></a>
+                                    <a  href="/Place?ID=<%=item.getCityID()%>"><img src="Assets/images/ser_pic1.jpg" title="image-name"></a>
                                 </div>
 
                                 <p><%=item.getCityName()%></p>
@@ -132,7 +132,34 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <%}
                             %>
                             <div class="clear"></div>
-                        </div>				
+                        </div>
+                        <div class="btm_grid top">
+                            <div class="ser-grid-list img_style">
+                                <div class="gallery">
+                                    <a class="popup-with-zoom-anim" href="#small-dialog"><img src="Assets/images/ser_pic5.jpg" title="image-name"></a>
+                                </div>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                            </div>
+                            <div class="ser-grid-list img_style">
+                                <div class="gallery">
+                                    <a class="popup-with-zoom-anim" href="#small-dialog"><img src="Assets/images/ser_pic6.jpg" title="image-name"></a>
+                                </div>
+                                <p> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using  making it look. </p>
+                            </div>
+                            <div class="ser-grid-list img_style">
+                                <div class="gallery">
+                                    <a class="popup-with-zoom-anim" href="#small-dialog"><img src="Assets/images/ser_pic7.jpg" title="image-name"></a>
+                                </div>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                            </div>
+                            <div class="ser-grid-list img_style">
+                                <div class="gallery">
+                                    <a class="popup-with-zoom-anim" href="#small-dialog"><img src="Assets/images/ser_pic8.jpg" title="image-name"></a>
+                                </div>
+                                <p> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using  making it look. </p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>					
                     </div>			
                 </div>
             </div>
